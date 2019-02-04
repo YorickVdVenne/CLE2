@@ -1,0 +1,249 @@
+@font-face {
+    font-family: freebooterscript;
+    src: url(../fonts/freebooterscript.ttf);
+
+}
+@font-face {
+    font-family: LobsterTwo-Bold;
+    src: url(../fonts/LobsterTwo-Bold.otf);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #FFF3E0;
+    font-family: freebooterscript, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #B71C1C;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #FFF3E0;
+}
+
+.topnav a {
+    margin-left: 4%;
+    float: left;
+    display: block;
+    color: #1A237E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-family: LobsterTwo-Bold, sans-serif;
+    letter-spacing: 1px;
+    justify-content: center;
+}
+
+.topnav a:hover {
+    background-color: #FFD54F;
+    color: white;
+}
+
+.active {
+    background-color: #B71C1C;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.backGroundTheme {
+    background-image: url("../images/Theepaviljoen2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed, fixed;
+    min-height: 100vh;
+    width: auto;
+}
+
+.container {
+    width: 20%;
+    margin: auto;
+    border: 5px;
+    border-style: hidden;
+    box-shadow: 5px 10px 8px black;
+    background-color: #FFF3E0;
+    position: absolute;
+    top: 68%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container h2{
+    font-family: LobsterTwo-Bold, sans-serif;
+    color: #1A237E;
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+    text-align: initial;
+}
+
+.labels {
+    font-size: 1vw;
+}
+
+.input {
+    margin-left: 27%;
+    align-content: center;
+    font-family: "Century Gothic", sans-serif;
+}
+
+input[type=text], input[type=number], input[type=date], input[type=email], input[type=password], input[type=time], input[type=tel],  {
+    padding: 5px 5px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Berlin Sans FB", sans-serif;
+}
+
+input[type=submit] {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 33%;
+    align-content: center;
+    padding: 10px 15px 11px !important;
+    font-size: 1vw !important;
+    background-color: #1A237E;
+    font-family: "Berlin Sans FB", sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #57D6C7;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#datum {
+    margin-left: 0;
+    width: 9.9vw;
+
+}
+
+#tijd {
+    margin-left: 0;
+    width: 10.1vw;
+}
+
+#aantal {
+    width: 10vw;
+}
+
+#voornaam {
+    width: 10vw;
+}
+
+#achternaam {
+    width: 10vw;
+}
+
+#telefoonnummer {
+    width: 10vw;
+}
+
+#email {
+    width: 10vw;
+}
+
+#submit {
+    width: 7vw;
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        font-size: 2vw;
+    }
+    header {
+        font-size: 3vw;
+    }
+    .container {
+        width: 80%;
+        left: 50%
+    }
+    #datum {
+        margin-left: 0;
+        width: 50%;
+
+    }
+
+    #tijd {
+        margin-left: 0;
+        width: 50%;
+    }
+
+    #aantal {
+        width: 50%;
+    }
+
+    #voornaam {
+        width: 50%;
+    }
+
+    #achternaam {
+        width: 50%;
+    }
+
+    #telefoonnummer {
+        width: 50%;
+    }
+
+    #email {
+        width: 50%;
+    }
+    #submit {
+        width: 30%;
+    }
+    input[type=submit] {
+        font-size: 2vw !important;
+
+    }
+    .labels {
+        font-size: 3vw;
+    }
+    .container h2{
+        font-size: 4.5vw;
+    }
+}

@@ -1,0 +1,548 @@
+@font-face {
+    font-family: freebooterscript;
+    src: url(../fonts/freebooterscript.ttf);
+
+}
+@font-face {
+    font-family: LobsterTwo-Bold;
+    src: url(../fonts/LobsterTwo-Bold.otf);
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#fullPage {
+    height: 100vh;
+}
+
+header {
+    background-color: #FFF3E0;
+    font-family: freebooterscript, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #B71C1C;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+}
+
+nav {
+    width: 100%;
+
+}
+
+nav.mainBar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFF3E0;
+    font-family: LobsterTwo-Bold, sans-serif;
+    letter-spacing: 1px;
+}
+
+nav.mainBar ul li {
+    float: left;
+    margin-right: 4%;
+}
+
+nav.mainBar ul li a {
+    display: block;
+    color: #1A237E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+}
+
+nav.mainBar ul li a:hover {
+    background-color: #FFD54F;
+    color: white;
+}
+
+nav.mainBar ul li a:active {
+    background-color: #B71C1C;
+    color: white;
+}
+
+nav.secondBar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1A237E;
+    font-family: LobsterTwo-Bold, sans-serif;
+    letter-spacing: 1px;
+}
+
+nav.secondBar ul li {
+    float: left;
+    margin-right: 5%;
+}
+
+nav.secondBar ul li a {
+    display: block;
+    color: antiquewhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav.secondBar ul li a:hover {
+    background-color: #FFD54F;
+    color: white;
+}
+
+nav.secondBar ul li a:active {
+    background-color: #B71C1C;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.backGroundTheme {
+    background-image: url("../images/Theepaviljoen2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed, fixed;
+    min-height: 100vh;
+    width: auto;
+}
+
+.container {
+    width: 20%;
+    margin: auto;
+    border: 5px;
+    border-style: hidden;
+    box-shadow: 5px 10px 8px black;
+    background-color: #FFF3E0;
+    position: absolute;
+    top: 68%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container h2{
+    font-family: LobsterTwo-Bold, sans-serif;
+    color: #1A237E;
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+    text-align: initial;
+}
+
+.labels {
+    font-size: 1vw;
+}
+
+.input {
+    margin-left: 27%;
+    align-content: center;
+    font-family: "Century Gothic", sans-serif;
+}
+
+input[type=text], input[type=number], input[type=date], input[type=email], input[type=password], input[type=time], input[type=tel],  {
+    padding: 5px 5px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Berlin Sans FB", sans-serif;
+}
+
+input[type=submit] {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 33%;
+    align-content: center;
+    padding: 10px 15px 11px !important;
+    font-size: 1vw !important;
+    background-color: #1A237E;
+    font-family: "Berlin Sans FB", sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #57D6C7;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#datum {
+    margin-left: 0;
+    width: 9.9vw;
+
+}
+
+#tijd {
+    margin-left: 0;
+    width: 10.1vw;
+}
+
+#aantal {
+    width: 10vw;
+}
+
+#voornaam {
+    width: 10vw;
+}
+
+#achternaam {
+    width: 10vw;
+}
+
+#telefoonnummer {
+    width: 10vw;
+}
+
+#email {
+    width: 10vw;
+}
+
+#submit {
+    width: 7vw;
+
+}
+
+.adminContainer {
+    width: 60%;
+    margin: auto;
+    border: 5px;
+    border-style: hidden;
+    box-shadow: 5px 10px 8px black;
+    background-color: #FFF3E0;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.adminContainer h4 {
+    color: #1A237E;
+    font-family: LobsterTwo-Bold, sans-serif;
+    text-align: center;
+    font-size: 28px;
+}
+
+#reservations {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #FFF3E0;
+}
+
+#reservations td, #reservations th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#reservations tr:nth-child(even){background-color: cornsilk;}
+
+#reservations tr:hover {background-color: khaki;}
+
+#reservations th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #FFD54F;
+    color: white;
+}
+
+.loginForm{
+    width: 12%;
+    margin: auto;
+    border: 5px;
+    border-style: hidden;
+    box-shadow: 5px 10px 8px black;
+    background-color: #FFF3E0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginForm h2 {
+    color: #1A237E;
+    font-family: LobsterTwo-Bold, sans-serif;
+    text-align: center;
+}
+
+.inputEmail {
+    width: 65%;
+    padding: 5px 5px;
+    margin: 2px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: "Berlin Sans FB", sans-serif;
+
+}
+
+.inputPassword {
+    width: 65%;
+    padding: 5px 5px;
+    margin: 2px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: "Berlin Sans FB", sans-serif;
+}
+
+footer {
+    position: relative;
+    height: 2vw;
+    background-color: #FFF3E0;
+    text-align: center;
+    color: #1A237E;
+    font-size: 1vw;
+    font-family: "Berlin Sans FB", sans-serif;
+}
+
+footer > p {
+    margin: 0;
+    padding: 10px;
+}
+
+.contentSecond {
+    width: 60%;
+    border: 5px;
+    border-style: hidden;
+    box-shadow: 5px 10px 8px black;
+    background-color: #FFF3E0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: center;
+}
+
+.whiteLine {
+    width: 100%;
+    background-color: #FFF3E0;
+    height: 75px;
+}
+
+.highTeaContainer {
+    width: 75%;
+    margin: auto;
+    border: 5px;
+    border-style: hidden;
+    box-shadow: 5px 10px 8px black;
+    background-color: #FFF3E0;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 8%;
+
+}
+
+.entryTitle {
+    font-family: LobsterTwo-Bold, sans-serif;
+    color: #1A237E;
+    letter-spacing: 1px;
+    margin-left: 45%
+}
+
+.entryTitleRoute {
+    font-family: LobsterTwo-Bold, sans-serif;
+    color: #1A237E;
+    letter-spacing: 1px;
+    margin-left: 41%
+}
+
+.titleUnderline {
+    height: 7px;
+    width: 75%;
+    margin-left: 12%;
+    background-color: #1A237E;
+}
+
+.backGroundThemeHighTea {
+    background-image: url("../images/Theepaviljoen2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed, fixed;
+    min-height: 100vh;
+    width: auto;
+    height: 1175px;
+}
+
+#highTeaText {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    font-family: "Britannic Bold", sans-serif;
+}
+
+.receptiesContainer {
+    width: 65%;
+    margin: auto;
+    border: 5px;
+    border-style: hidden;
+    box-shadow: 5px 10px 8px black;
+    background-color: #FFF3E0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 8%;
+
+}
+
+#receptiesText {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    font-family: "Britannic Bold", sans-serif;
+}
+
+.bruidstaartContainer {
+    width: 65%;
+    margin: auto;
+    border: 5px;
+    border-style: hidden;
+    box-shadow: 5px 10px 8px black;
+    background-color: #FFF3E0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 8%;
+
+}
+
+#bruidstaartText {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    font-family: "Britannic Bold", sans-serif;
+}
+
+.backGroundThemeLandgoed {
+    background-image: url("../images/Theepaviljoen2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed, fixed;
+    min-height: 100vh;
+    width: auto;
+    height: 1800px;
+}
+
+.landgoedContainer {
+    width: 65%;
+    margin: auto;
+    border: 5px;
+    border-style: hidden;
+    box-shadow: 5px 10px 8px black;
+    background-color: #FFF3E0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 8%;
+
+}
+
+#landgoedText {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    font-family: "Britannic Bold", sans-serif;
+    text-align: center;
+}
+
+#pHeader {
+    font-weight: bold;
+    text-align: center;
+}
+
+.routeBeschrijvingContainer {
+    width: 65%;
+    margin: auto;
+    border: 5px;
+    border-style: hidden;
+    box-shadow: 5px 10px 8px black;
+    background-color: #FFF3E0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 8%;
+
+}
+
+#routeBeschrijvingText {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    font-family: "Britannic Bold", sans-serif;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
