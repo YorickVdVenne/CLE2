@@ -1,0 +1,71 @@
+window.addEventListener("load", init);
+
+function init() {
+    document.getElementById("button").addEventListener("click", function (e){
+
+        if (validateForm()) {
+            confirmation(e);
+        } else {
+
+        }
+    });
+}
+
+function validateForm() {
+    var aantal = document.getElementById("aantal");
+    var datum = document.getElementById("datum");
+    var tijd = document.getElementById("tijd");
+    var voornaam = document.getElementById("voornaam");
+    var achternaam = document.getElementById("achternaam");
+    var telefoonnummer = document.getElementById("telefoonnummer");
+    var email = document.getElementById("email");
+
+    if (aantal.value < 1) {
+        window.alert("Vul alstublieft de hoeveelheid personen in");
+        return false;
+    }
+
+    if (datum.value == "") {
+        window.alert("Vul alstublieft een datum in");
+        return false;
+    }
+
+    if (tijd.selectedIndex < 1) {
+        window.alert("Vul alstublieft een tijd in");
+        return false;
+    }
+
+    if (voornaam.value == "") {
+        window.alert("Vul alstublieft uw voornaam in");
+        return false;
+    }
+
+    if (achternaam.value == "") {
+        window.alert("Vul alstublieft uw achternaam in");
+        return false;
+    }
+
+    if (telefoonnummer.value == "") {
+        window.alert("Vul alstublieft uw telefoonnummer in");
+        return false;
+    }
+
+    if (email.value == "") {
+        window.alert("Vul alstublieft uw email in");
+        return false;
+    }
+
+    return true;
+}
+
+function confirmation(e) {
+    let txt;
+    if (confirm("Bevestig uw reservering")) {
+        txt = "Uw reservering is bevestigd!";
+        e.preventDefault();
+    } else {
+        txt = "Uw reservering is geannuleerd ";
+        e.preventDefault();
+    }
+    document.getElementById("confirmation").innerHTML = txt;
+}
